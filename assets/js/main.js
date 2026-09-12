@@ -26,7 +26,7 @@
   document.querySelectorAll("[data-form-suscripcion]").forEach(function (form) {
     form.addEventListener("submit", function (evt) {
       evt.preventDefault();
-      var mensaje = form.querySelector("[data-mensaje-exito]");
+      var mensaje = form.querySelector("[data-mensaje-exito]") || form.parentElement.querySelector("[data-mensaje-exito]");
       if (mensaje) {
         mensaje.hidden = false;
       }
