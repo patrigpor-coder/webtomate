@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUSTITUIR: fotografía real de la variedad Tomate Cereza / Kirschtomate -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t4">
+  <title id="t4">Kirschtomate / Tomate Cereza</title>
+  <rect width="800" height="600" fill="#050505" />
+  <g fill="#E23A2E">
+    <circle cx="300" cy="250" r="55" /><circle cx="410" cy="210" r="48" />
+    <circle cx="480" cy="300" r="52" /><circle cx="360" cy="340" r="50" />
+    <circle cx="250" cy="350" r="44" /><circle cx="440" cy="400" r="46" />
+    <circle cx="520" cy="220" r="40" /><circle cx="320" cy="440" r="42" />
+  </g>
+  <g stroke="#2F7A3E" stroke-width="3" fill="none" opacity="0.8">
+    <path d="M300,195 L300,150" /><path d="M410,162 L410,125" />
+    <path d="M480,248 L480,210" /><path d="M360,290 L360,255" />
+  </g>
+</svg>

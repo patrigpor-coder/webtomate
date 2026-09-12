@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUSTITUIR: fotografía real de la variedad Oblongo o Alargado / Eiertomate -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t3">
+  <title id="t3">Eiertomate / Oblongo o Alargado</title>
+  <rect width="800" height="600" fill="#050505" />
+  <g transform="translate(400 310)">
+    <ellipse cx="-140" cy="30" rx="70" ry="105" fill="#c22a20" transform="rotate(-8 -140 30)" />
+    <ellipse cx="0" cy="0" rx="78" ry="118" fill="#d42e23" />
+    <ellipse cx="150" cy="35" rx="70" ry="105" fill="#c22a20" transform="rotate(8 150 35)" />
+  </g>
+</svg>

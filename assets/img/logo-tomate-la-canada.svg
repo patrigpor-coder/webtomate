@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUSTITUIR: este sello es una reconstrucción provisional del logo original
+     (Logo_tomate_la_can_ada.jpg), que no se recibió como archivo en esta sesión.
+     Sustituir por el recorte real en PNG con fondo transparente cuando esté disponible.
+     Referenciado en el CSS/HTML como logo-tomate-la-canada.svg; puede renombrarse a
+     .png sin tocar el resto del sitio si se exporta una versión rasterizada. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Siegel der g.g.A. Tomate de La Cañada-Níjar / Sello de la IGP Tomate de La Cañada-Níjar</title>
+  <defs>
+    <path id="arcoSuperior" d="M 30,100 A 70,70 0 0 1 170,100" />
+    <path id="arcoInferior" d="M 34,120 A 66,66 0 0 0 166,120" />
+  </defs>
+
+  <circle cx="100" cy="100" r="96" fill="#FBF9F6" stroke="#0D0D0D" stroke-width="2" />
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#D42E23" stroke-width="1.2" />
+
+  <text font-family="Georgia, serif" font-size="19" font-weight="700" fill="#D42E23" letter-spacing="3">
+    <textPath href="#arcoSuperior" startOffset="50%" text-anchor="middle">TOMATE</textPath>
+  </text>
+  <text font-family="Georgia, serif" font-size="12" font-weight="600" fill="#0D0D0D" letter-spacing="1.5">
+    <textPath href="#arcoInferior" startOffset="50%" text-anchor="middle">LA CAÑADA · NÍJAR</textPath>
+  </text>
+
+  <g transform="translate(100 103)">
+    <g transform="rotate(45)">
+      <rect x="-26" y="-26" width="26" height="26" fill="#2A9D9C" />
+      <rect x="0" y="-26" width="26" height="26" fill="#D42E23" />
+      <rect x="-26" y="0" width="26" height="26" fill="#E8862A" />
+      <rect x="0" y="0" width="26" height="26" fill="#2A9D9C" />
+    </g>
+    <path d="M0,-15 L4.3,-4.6 15,-4.6 6.4,2 9.7,12.5 0,6 -9.7,12.5 -6.4,2 -15,-4.6 -4.3,-4.6 Z" fill="#2F7A3E" />
+  </g>
+</svg>

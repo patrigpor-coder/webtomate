@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUSTITUIR: placeholder de Tomate_corazon_.jpeg (no recibida como archivo en
+     esta sesión). Fotografía vertical real: corazón de tomates sobre negro
+     absoluto, mitad izquierda tomates de rama asurcados, mitad derecha tomates
+     cereza. Mantener proporción vertical al sustituir. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Herz aus Tomaten auf schwarzem Hintergrund / Corazón de tomates sobre fondo negro</title>
+  <rect width="900" height="1200" fill="#0D0D0D" />
+  <g transform="translate(450 560)">
+    <path d="M0,260 C-260,60 -300,-160 -140,-260 C-30,-330 40,-260 0,-150 C-40,-260 30,-330 140,-260 C300,-160 260,60 0,260 Z"
+          fill="none" stroke="#2F7A3E" stroke-width="3" stroke-dasharray="10 8" opacity="0.5" />
+    <!-- mitad izquierda: tomates de rama grandes y asurcados -->
+    <g fill="#D42E23">
+      <circle cx="-150" cy="-40" r="78" />
+      <circle cx="-70" cy="-120" r="66" />
+      <circle cx="-190" cy="70" r="60" />
+      <circle cx="-90" cy="60" r="70" />
+      <circle cx="-30" cy="-30" r="58" />
+    </g>
+    <g stroke="#8f1c14" stroke-width="2" fill="none" opacity="0.6">
+      <circle cx="-150" cy="-40" r="78" />
+      <circle cx="-70" cy="-120" r="66" />
+      <circle cx="-190" cy="70" r="60" />
+    </g>
+    <g fill="#2F7A3E">
+      <circle cx="-150" cy="-112" r="8" />
+      <circle cx="-70" cy="-180" r="7" />
+      <circle cx="-90" cy="-4" r="7" />
+    </g>
+    <!-- mitad derecha: tomates cereza pequeños -->
+    <g fill="#E8862A">
+      <circle cx="60" cy="-60" r="20" /><circle cx="95" cy="-20" r="18" />
+      <circle cx="30" cy="10" r="17" /><circle cx="120" cy="30" r="19" />
+      <circle cx="70" cy="60" r="16" /><circle cx="140" cy="-70" r="17" />
+      <circle cx="160" cy="10" r="18" /><circle cx="100" cy="90" r="16" />
+      <circle cx="40" cy="90" r="15" /><circle cx="150" cy="80" r="14" />
+      <circle cx="20" cy="-90" r="15" /><circle cx="180" cy="-30" r="16" />
+    </g>
+    <g fill="#2F7A3E" opacity="0.9">
+      <circle cx="60" cy="-78" r="4" /><circle cx="95" cy="-38" r="3.5" />
+      <circle cx="120" cy="12" r="3.5" /><circle cx="140" cy="-88" r="3.5" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUSTITUIR: fotografía real de la variedad Redondo Liso / Runde Tomate -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t1">
+  <title id="t1">Runde Tomate / Redondo Liso</title>
+  <rect width="800" height="600" fill="#050505" />
+  <circle cx="400" cy="310" r="180" fill="#B5231C" />
+  <circle cx="400" cy="310" r="180" fill="none" stroke="#7a140f" stroke-width="3" opacity="0.6" />
+  <ellipse cx="340" cy="230" rx="70" ry="45" fill="#d84a3d" opacity="0.5" />
+  <path d="M400,130 q-18,-22 -38,-14 q10,-24 38,-24 q28,0 38,24 q-20,-8 -38,14 Z" fill="#2F7A3E" />
+</svg>
