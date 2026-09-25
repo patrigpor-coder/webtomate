@@ -758,6 +758,17 @@ a:hover { color: var(--vino); }
 .bloque-variantes ul { margin: 0; padding-left: 1.2rem; }
 .bloque-variantes li { margin-bottom: 0.4em; }
 
+.bloque-faq {
+  margin: 1.6rem 0 2.4rem;
+}
+.faq-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--borde-claro);
+}
+.faq-item:last-child { border-bottom: 0; }
+.faq-item h3 { font-size: 1.05rem; margin-bottom: 0.4em; }
+.faq-item p { margin: 0; color: #444; font-size: 0.96rem; }
+
 .cta-final {
   background: var(--negro);
   color: var(--blanco-roto);
