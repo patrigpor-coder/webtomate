@@ -13,6 +13,7 @@ Alemán en la raíz, español bajo `/es/`.
 /anbau.html                                         → Anbau
 /rezepte/index.html                                 → Rezepte (índice)
 /rezepte/tomatensuppe.html                          → Receta: Tomatensuppe
+/rezepte/gazpacho.html                              → Receta: Gazpacho
 /gesundheit.html                                    → Gesundheit
 /kaufen.html                                        → Kaufen
 /entdecken.html                                     → Landing QR (sin menú)
@@ -23,6 +24,7 @@ Alemán en la raíz, español bajo `/es/`.
 /es/cultivo.html                                     → Cultivo
 /es/recetas/index.html                               → Recetas (índice)
 /es/recetas/sopa-de-tomate.html                      → Receta: Sopa de tomate
+/es/recetas/gazpacho-andaluz.html                    → Receta: Gazpacho andaluz
 /es/salud.html                                       → Salud
 /es/donde-comprar.html                               → Dónde comprar
 /es/descubre.html                                    → Landing QR (sin menú)
@@ -106,8 +108,8 @@ instrucciones. Por eso:
   el HTML.
 - `/assets/img/variedad-*.svg` (4 archivos) son placeholders de las
   fotos de cada variedad en la página de Variedades/Sorten.
-- `/assets/img/receta-sopa-tomate.svg` es el placeholder de la foto del
-  plato terminado en la receta.
+- `/assets/img/receta-sopa-tomate.svg` y `/assets/img/receta-gazpacho.svg`
+  son los placeholders de la foto del plato terminado en cada receta.
 - Todos estos archivos incluyen un comentario `<!-- SUSTITUIR -->` al
   principio explicando qué sustituir.
 - Los logos de REWE y EDEKA en la página "Kaufen"/"Dónde comprar" son
@@ -150,10 +152,10 @@ funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
 
 1. **Fotografías reales de producto**: logo en PNG con fondo transparente,
    fotografía del corazón de tomates, fotos de cada variedad, foto del
-   plato de sopa de tomate y fotos de cada paso de la receta.
-2. **Recetas 2 y siguientes**: los índices de recetas (`rezepte/index.html`
-   y `es/recetas/index.html`) tienen dos tarjetas "Demnächst" / "Próximamente"
-   listas para sustituir por recetas reales (instrucciones en comentarios
+   platos de sopa de tomate y gazpacho y fotos de cada paso de las recetas.
+2. **Recetas 3 y siguientes**: los índices de recetas (`rezepte/index.html`
+   y `es/recetas/index.html`) tienen una tarjeta "Demnächst" / "Próximamente"
+   lista para sustituir por recetas reales (instrucciones en comentarios
    `<!-- SUSTITUIR -->` dentro de esos archivos).
 3. **Logos de REWE y EDEKA** en la página Kaufen / Dónde comprar.
 4. **Dominio real** en canonical, hreflang, Open Graph, JSON-LD, sitemap.xml

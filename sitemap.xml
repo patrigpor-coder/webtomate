@@ -79,6 +79,18 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.tomate-lacanada.de/es/recetas/sopa-de-tomate.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tomate-lacanada.de/rezepte/tomatensuppe.html" />
   </url>
+  <url>
+    <loc>https://www.tomate-lacanada.de/rezepte/gazpacho.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.tomate-lacanada.de/rezepte/gazpacho.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tomate-lacanada.de/es/recetas/gazpacho-andaluz.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tomate-lacanada.de/rezepte/gazpacho.html" />
+  </url>
+  <url>
+    <loc>https://www.tomate-lacanada.de/es/recetas/gazpacho-andaluz.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.tomate-lacanada.de/rezepte/gazpacho.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.tomate-lacanada.de/es/recetas/gazpacho-andaluz.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.tomate-lacanada.de/rezepte/gazpacho.html" />
+  </url>
 
   <url>
     <loc>https://www.tomate-lacanada.de/gesundheit.html</loc>

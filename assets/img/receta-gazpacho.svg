@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SUSTITUIR: fotografía real del plato terminado (gazpacho andaluz) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="tgazpacho">
+  <title id="tgazpacho">Gazpacho</title>
+  <rect width="1200" height="800" fill="#F5F1EA" />
+  <ellipse cx="600" cy="470" rx="330" ry="90" fill="#ece5d6" stroke="#d8cfba" stroke-width="4" />
+  <ellipse cx="600" cy="440" rx="300" ry="72" fill="#b8261c" />
+  <ellipse cx="600" cy="430" rx="300" ry="60" fill="#D42E23" />
+  <rect x="505" y="400" width="22" height="22" rx="3" fill="#8fb870" transform="rotate(12 516 411)" />
+  <rect x="640" y="418" width="20" height="20" rx="3" fill="#2F7A3E" transform="rotate(-10 650 428)" />
+  <rect x="575" y="392" width="24" height="24" rx="4" fill="#e9c98f" transform="rotate(20 587 404)" />
+  <rect x="690" y="398" width="18" height="18" rx="3" fill="#8fb870" />
+  <path d="M470 430 q60 -18 120 0 t120 0" fill="none" stroke="#E8862A" stroke-width="5" opacity="0.7" />
+</svg>
