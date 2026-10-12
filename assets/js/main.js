@@ -22,6 +22,109 @@
     try { localStorage.setItem("tomate_idioma", htmlLang.slice(0, 2)); } catch (e) { /* almacenamiento no disponible */ }
   }
 
+  /* ---- Consentimiento: cookies y contenido externo (Google Maps) ----
+   * Sin consentimiento no se carga nada de Google Maps: el mapa muestra un
+   * aviso y solo se inserta el <iframe> cuando el visitante lo acepta (desde
+   * el propio mapa o desde el aviso). La elección se guarda en localStorage
+   * y se puede cambiar desde el enlace "Cookies" del pie de página. */
+  var CLAVE_CONSENTIMIENTO = "tomate_consentimiento";
+  var TEXTOS_COOKIES = {
+    es: {
+      titulo: "Privacidad y cookies",
+      texto: "Usamos solo el almacenamiento necesario para que la web funcione (tu idioma y esta elección). Con tu permiso cargamos además contenido externo de Google Maps, que recibe tu dirección IP y puede usar cookies. Puedes cambiar tu elección cuando quieras desde el enlace «Cookies» del pie de página.",
+      aceptar: "Aceptar todo",
+      rechazar: "Solo necesarias"
+    },
+    de: {
+      titulo: "Datenschutz und Cookies",
+      texto: "Wir verwenden nur die für den Betrieb der Website notwendige Speicherung (Ihre Sprache und diese Auswahl). Mit Ihrer Einwilligung laden wir zusätzlich externe Inhalte von Google Maps, die Ihre IP-Adresse erhalten und Cookies setzen können. Sie können Ihre Auswahl jederzeit über den Link „Cookie-Einstellungen“ in der Fußzeile ändern.",
+      aceptar: "Alle akzeptieren",
+      rechazar: "Nur notwendige"
+    }
+  };
+  var textosCookies = TEXTOS_COOKIES[(htmlLang || "de").slice(0, 2)] || TEXTOS_COOKIES.de;
+  var avisoCookies = null;
+
+  function leerConsentimiento() {
+    try {
+      var valor = JSON.parse(localStorage.getItem(CLAVE_CONSENTIMIENTO));
+      return valor && typeof valor.externos === "boolean" ? valor : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function guardarConsentimiento(externos) {
+    try {
+      localStorage.setItem(CLAVE_CONSENTIMIENTO, JSON.stringify({ externos: externos, fecha: new Date().toISOString(), version: 1 }));
+    } catch (e) { /* almacenamiento no disponible: la elección vale solo para esta visita */ }
+  }
+
+  function cargarMapas() {
+    document.querySelectorAll("[data-mapa-google]").forEach(function (marco) {
+      if (marco.querySelector("iframe")) return;
+      var iframe = document.createElement("iframe");
+      iframe.src = marco.getAttribute("data-src");
+      iframe.title = marco.getAttribute("data-titulo") || "";
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      iframe.allowFullscreen = true;
+      marco.innerHTML = "";
+      marco.appendChild(iframe);
+    });
+  }
+
+  function decidirConsentimiento(externos) {
+    var mapasCargados = document.querySelector("[data-mapa-google] iframe");
+    guardarConsentimiento(externos);
+    if (avisoCookies) avisoCookies.hidden = true;
+    if (externos) {
+      cargarMapas();
+    } else if (mapasCargados) {
+      /* Retirar un consentimiento ya dado: recargar para quitar el contenido de Google */
+      window.location.reload();
+    }
+  }
+
+  function mostrarAvisoCookies(enfocar) {
+    if (!avisoCookies) {
+      avisoCookies = document.createElement("section");
+      avisoCookies.className = "aviso-cookies";
+      avisoCookies.setAttribute("role", "dialog");
+      avisoCookies.setAttribute("aria-labelledby", "aviso-cookies-titulo");
+      avisoCookies.setAttribute("aria-describedby", "aviso-cookies-texto");
+      avisoCookies.innerHTML =
+        '<h2 class="aviso-cookies__titulo" id="aviso-cookies-titulo"></h2>' +
+        '<p id="aviso-cookies-texto"></p>' +
+        '<div class="aviso-cookies__acciones">' +
+        '<button class="boton aviso-cookies__boton" type="button" data-cookies-aceptar></button>' +
+        '<button class="boton aviso-cookies__boton" type="button" data-cookies-rechazar></button>' +
+        "</div>";
+      avisoCookies.querySelector("h2").textContent = textosCookies.titulo;
+      avisoCookies.querySelector("p").textContent = textosCookies.texto;
+      avisoCookies.querySelector("[data-cookies-aceptar]").textContent = textosCookies.aceptar;
+      avisoCookies.querySelector("[data-cookies-rechazar]").textContent = textosCookies.rechazar;
+      avisoCookies.querySelector("[data-cookies-aceptar]").addEventListener("click", function () { decidirConsentimiento(true); });
+      avisoCookies.querySelector("[data-cookies-rechazar]").addEventListener("click", function () { decidirConsentimiento(false); });
+      document.body.appendChild(avisoCookies);
+    }
+    avisoCookies.hidden = false;
+    if (enfocar) avisoCookies.querySelector("button").focus();
+  }
+
+  var consentimiento = leerConsentimiento();
+  if (consentimiento && consentimiento.externos) {
+    cargarMapas();
+  } else if (!consentimiento) {
+    mostrarAvisoCookies(false);
+  }
+  document.querySelectorAll("[data-cargar-mapa]").forEach(function (boton) {
+    boton.addEventListener("click", function () { decidirConsentimiento(true); });
+  });
+  document.querySelectorAll("[data-abrir-cookies]").forEach(function (boton) {
+    boton.addEventListener("click", function () { mostrarAvisoCookies(true); });
+  });
+
   /* ---- Formularios de suscripción (sin backend: solo feedback visual) ---- */
   document.querySelectorAll("[data-form-suscripcion]").forEach(function (form) {
     form.addEventListener("submit", function (evt) {

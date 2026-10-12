@@ -112,19 +112,16 @@
       <h2>Das Anbaugebiet</h2>
       <p>Das Anbaugebiet umfasst die Landschaft von Campo de Níjar und Bajo Andarax sowie einen Teil der Stadt Almería (La Cañada). Es erstreckt sich über die Gemeinden Almería, Huércal de Almería, Pechina, Viator und Níjar, alle in der Provinz Almería.</p>
 
-      <div class="mapa-svg-contenedor">
-        <svg viewBox="0 0 400 320" role="img" aria-labelledby="mapaTitle">
-          <title id="mapaTitle">Karte der Provinz Almería mit dem Anbaugebiet</title>
-          <path d="M20,260 L60,120 L140,60 L230,50 L320,90 L370,180 L340,260 L260,300 L120,300 Z" fill="#F5F1EA" stroke="#0D0D0D" stroke-width="2" />
-          <path d="M150,120 L230,100 L270,150 L250,200 L180,210 L140,170 Z" fill="#6B1620" opacity="0.85" />
-          <circle cx="190" cy="150" r="4" fill="#FBF9F6" /><text x="198" y="153" font-size="12" fill="#0D0D0D">Almería</text>
-          <circle cx="220" cy="125" r="4" fill="#FBF9F6" /><text x="228" y="120" font-size="12" fill="#0D0D0D">Huércal de Almería</text>
-          <circle cx="205" cy="180" r="4" fill="#FBF9F6" /><text x="213" y="195" font-size="12" fill="#0D0D0D">Pechina</text>
-          <circle cx="245" cy="160" r="4" fill="#FBF9F6" /><text x="253" y="165" font-size="12" fill="#0D0D0D">Viator</text>
-          <circle cx="235" cy="200" r="4" fill="#FBF9F6" /><text x="243" y="215" font-size="12" fill="#0D0D0D">Níjar</text>
-        </svg>
-      </div>
-      <p style="font-size:0.85rem;color:#666;text-align:center">Schematische Darstellung, nicht maßstabsgetreu.</p>
+      <figure class="mapa-google">
+        <div class="mapa-google__marco" data-mapa-google data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.3700654481713!2d-2.463722888533544!3d36.83361227212186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd70760297324363%3A0x7eb5a8278e4a0144!2sCtra.%20de%20Ronda%2C%2011%2C%2004004%20Almer%C3%ADa!5e0!3m2!1sde!2sde!4v1791818742868!5m2!1sde!2sde" data-titulo="Standort in Google Maps">
+          <div class="mapa-google__aviso">
+            <p class="mapa-google__aviso-titulo">Google Maps</p>
+            <p>Um die Karte anzuzeigen, benötigen wir Ihre Einwilligung: Beim Laden verbindet sich Ihr Browser mit den Servern von Google (Google Ireland Ltd.), die Ihre IP-Adresse erhalten und Cookies setzen können.</p>
+            <button class="boton boton--primario" type="button" data-cargar-mapa>Akzeptieren und Karte laden</button>
+          </div>
+        </div>
+        <figcaption>Ctra. de Ronda, 11, 04004 Almería · <a href="https://www.google.com/maps/search/?api=1&amp;query=Ctra.%20de%20Ronda%2C%2011%2C%2004004%20Almer%C3%ADa" target="_blank" rel="noopener">In Google Maps öffnen</a></figcaption>
+      </figure>
     </div>
   </section>
 </main>
@@ -153,7 +150,7 @@
       <h4>Rechtliches</h4>
       <ul>
         <li><a href="#">Impressum</a></li>
-        <li><a href="#">Datenschutz</a></li>
+        <li><a href="#">Datenschutz</a></li><li><button class="pie__enlace-boton" type="button" data-abrir-cookies>Cookie-Einstellungen</button></li>
       </ul>
     </div>
   </div>

@@ -21,7 +21,8 @@
     "imprint": "Impressum",
     "privacy": "Datenschutz",
     "rights": "Alle Rechte vorbehalten.",
-    "logoAlt": "Siegel der geschützten geografischen Angabe Tomate de La Cañada-Níjar"
+    "logoAlt": "Siegel der geschützten geografischen Angabe Tomate de La Cañada-Níjar",
+    "cookies": "Cookie-Einstellungen"
   },
   "common": {
     "ctaBuy": "Wo kaufen?",
@@ -72,7 +73,12 @@
     "timelineTodayText": "Tomate de La Cañada-Níjar wird unter strengen Qualitätskriterien angebaut und exportiert – auch nach Deutschland.",
     "mapTitle": "Das Anbaugebiet",
     "mapText": "Das Anbaugebiet umfasst die Landschaft von Campo de Níjar und Bajo Andarax sowie einen Teil der Stadt Almería (La Cañada). Es erstreckt sich über die Gemeinden Almería, Huércal de Almería, Pechina, Viator und Níjar, alle in der Provinz Almería.",
-    "mapSvgTitle": "Karte der Provinz Almería mit dem Anbaugebiet",
+    "mapIframeTitle": "Standort in Google Maps",
+    "mapConsentTitle": "Google Maps",
+    "mapConsentText": "Um die Karte anzuzeigen, benötigen wir Ihre Einwilligung: Beim Laden verbindet sich Ihr Browser mit den Servern von Google (Google Ireland Ltd.), die Ihre IP-Adresse erhalten und Cookies setzen können.",
+    "mapConsentButton": "Akzeptieren und Karte laden",
+    "mapAddress": "Ctra. de Ronda, 11, 04004 Almería",
+    "mapOpenLink": "In Google Maps öffnen",
     "municipality1": "Almería",
     "municipality2": "Huércal de Almería",
     "municipality3": "Pechina",
@@ -416,5 +422,11 @@
     "claim": "Tomaten, die nach Sonne schmecken.",
     "text": "Schön, dass Sie unsere Tomaten entdeckt haben. Abonnieren Sie unser wöchentliches Rezept und erfahren Sie mehr über den Geschmack Almerías.",
     "cta": "Jetzt abonnieren"
+  },
+  "cookies": {
+    "title": "Datenschutz und Cookies",
+    "text": "Wir verwenden nur die für den Betrieb der Website notwendige Speicherung (Ihre Sprache und diese Auswahl). Mit Ihrer Einwilligung laden wir zusätzlich externe Inhalte von Google Maps, die Ihre IP-Adresse erhalten und Cookies setzen können. Sie können Ihre Auswahl jederzeit über den Link „Cookie-Einstellungen“ in der Fußzeile ändern.",
+    "accept": "Alle akzeptieren",
+    "reject": "Nur notwendige"
   }
 }
