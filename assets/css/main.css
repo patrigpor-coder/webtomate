@@ -840,17 +840,32 @@ a:hover { color: var(--vino); }
   background: var(--blanco-roto);
 }
 .tarjeta-cadena__logo {
-  width: 120px;
-  height: 48px;
-  display: flex;
+  /* Placa tipográfica con el nombre de la cadena (sin logotipos de terceros).
+     Altura fija para que todas las tarjetas queden alineadas. */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--crema);
-  border-radius: var(--radio);
+  min-width: 160px;
+  height: 56px;
+  padding: 0 1.2rem;
   margin-bottom: 1rem;
+  background: var(--crema);
+  border: 1px solid var(--borde-claro);
+  border-radius: var(--radio);
+  font-family: var(--fuente-cuerpo);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  line-height: 1;
+  color: var(--vino);
+}
+.nota-cadenas {
+  margin: -1.6rem 0 2.6rem;
   font-size: 0.8rem;
-  color: #999;
-  border: 1px dashed var(--borde-claro);
+  line-height: 1.5;
+  color: #666;
 }
 .buscador-postal {
   background: var(--crema);
