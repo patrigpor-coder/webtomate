@@ -112,10 +112,12 @@ instrucciones. Por eso:
   son los placeholders de la foto del plato terminado en cada receta.
 - Todos estos archivos incluyen un comentario `<!-- SUSTITUIR -->` al
   principio explicando qué sustituir.
-- Los logos de REWE y EDEKA en la página "Kaufen"/"Dónde comprar" son
-  cajas de texto placeholder (`<!-- SUSTITUIR: Logo REWE -->` /
-  `<!-- SUSTITUIR: Logo EDEKA -->`): sustitúyelos por los logos oficiales
-  respetando las condiciones de uso de marca de cada cadena.
+- En la página "Kaufen"/"Dónde comprar" **no se usan los logotipos de
+  REWE ni EDEKA**: cada tarjeta muestra el nombre de la cadena como una
+  placa tipográfica propia (clase `.tarjeta-cadena__logo`, fuente de
+  cuerpo en mayúsculas, color vino sobre crema). Debajo de las tarjetas,
+  una nota (`.nota-cadenas`) aclara que los nombres se citan solo como
+  referencia comercial y que la distribución es una propuesta del proyecto.
 - Las fotos de cada paso de la receta son cajas placeholder (clase
   `.paso-foto`): añade una etiqueta `<img>` dentro de cada una cuando
   tengas las fotos del paso a paso.
@@ -151,17 +153,16 @@ funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
 ## Pendiente para publicar
 
 1. **Fotografías reales de producto**: logo en PNG con fondo transparente,
-   fotografía del corazón de tomates, fotos de cada variedad, foto del
+   fotografía del corazón de tomates, fotos de cada variedad, fotos de los
    platos de sopa de tomate y gazpacho y fotos de cada paso de las recetas.
 2. **Recetas 3 y siguientes**: los índices de recetas (`rezepte/index.html`
    y `es/recetas/index.html`) tienen una tarjeta "Demnächst" / "Próximamente"
    lista para sustituir por recetas reales (instrucciones en comentarios
    `<!-- SUSTITUIR -->` dentro de esos archivos).
-3. **Logos de REWE y EDEKA** en la página Kaufen / Dónde comprar.
-4. **Dominio real** en canonical, hreflang, Open Graph, JSON-LD, sitemap.xml
+3. **Dominio real** en canonical, hreflang, Open Graph, JSON-LD, sitemap.xml
    y robots.txt (ver sección "Dominio" arriba).
-5. **Impresum / Datenschutz** (aviso legal / privacidad): los enlaces del
+4. **Impresum / Datenschutz** (aviso legal / privacidad): los enlaces del
    pie de página apuntan a `#` como marcador de posición; falta redactar
    y enlazar estas páginas legales, obligatorias en Alemania.
-6. **Formulario de suscripción real**: conectar a un proveedor de email
+5. **Formulario de suscripción real**: conectar a un proveedor de email
    marketing o backend propio (ver sección "Formularios" arriba).
