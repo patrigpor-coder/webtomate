@@ -116,11 +116,13 @@ instrucciones. Por eso:
   cuerpo en mayúsculas, color vino sobre crema). Debajo de las tarjetas,
   una nota (`.nota-cadenas`) aclara que los nombres se citan solo como
   referencia comercial y que la distribución es una propuesta del proyecto.
-- Fotos del paso a paso: la sopa de tomate ya tiene las seis
-  (`sopa-paso-1.jpg` … `sopa-paso-6.jpg`, como `<img class="paso-foto
-  paso-foto--imagen">`). El gazpacho sigue con cajas placeholder
-  (`<div class="paso-foto">` con comentario `SUSTITUIR`): sustitúyelas por
-  una `<img>` con las mismas clases cuando tengas las fotos.
+- Fotos del paso a paso (`<img class="paso-foto paso-foto--imagen">`,
+  1200×670-675 px): la sopa de tomate tiene las seis (`sopa-paso-1.jpg` …
+  `sopa-paso-6.jpg`) y el gazpacho los pasos 1 a 5 (`gazpacho-paso-1.jpg`
+  … `gazpacho-paso-5.jpg`). El paso 6 del gazpacho sigue con una caja
+  placeholder (`<div class="paso-foto">` con comentario `SUSTITUIR`).
+  Las fotos no deben llevar texto incrustado, porque se usan también en
+  la versión alemana.
 
 El sello (logo) que aparece superpuesto en la esquina inferior derecha de
 las fotografías se coloca por CSS (clase `.foto-sellada` + `.foto-sellada__sello`)
@@ -180,7 +182,7 @@ funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
 ## Pendiente para publicar
 
 1. **Fotografías pendientes**: logo en PNG con fondo transparente y fotos
-   de cada paso del gazpacho.
+   del paso 6 del gazpacho ("Enfriar y servir").
 2. **Recetas 3 y siguientes**: los índices de recetas (`rezepte/index.html`
    y `es/recetas/index.html`) tienen una tarjeta "Demnächst" / "Próximamente"
    lista para sustituir por recetas reales (instrucciones en comentarios
