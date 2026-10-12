@@ -273,6 +273,14 @@ a:hover { color: var(--vino); }
 }
 
 @media (min-width: 760px) {
+  /* Degradado bajo el titular para que se lea sobre la fotografía */
+  .hero__imagen-contenedor::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(13, 13, 13, 0.85) 0%, rgba(13, 13, 13, 0.55) 35%, rgba(13, 13, 13, 0) 60%);
+    pointer-events: none;
+  }
   .hero__contenido {
     position: absolute;
     left: 0;
