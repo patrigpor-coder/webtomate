@@ -129,17 +129,25 @@ fotos.
 
 ## Dominio
 
-Todas las URLs canónicas, hreflang, Open Graph y el sitemap usan el
-dominio de ejemplo `https://www.tomate-lacanada.de`. Antes de publicar,
-sustituye este dominio por el real en:
+El sitio está publicado con **GitHub Pages** en
+`https://patrigpor-coder.github.io/webtomate/`, que se actualiza solo
+cada vez que cambia la rama principal del repositorio. Todas las URLs
+absolutas usan ese dominio:
 
 - Todos los `<link rel="canonical">` y `<link rel="alternate" hreflang="...">`
 - Las etiquetas `og:url`, `og:image`, `twitter:image`
-- Los JSON-LD (`Organization`, `BreadcrumbList`, `Recipe`)
-- `/sitemap.xml` y `/robots.txt`
+- Los JSON-LD (`Organization`, `BreadcrumbList`, `Recipe`, `FAQPage`)
+- `/sitemap.xml`, `/robots.txt` y `meta.domain` en los JSON de textos
 
-Un buscar-y-reemplazar de `https://www.tomate-lacanada.de` por tu dominio
-real en todo el proyecto es suficiente.
+Si más adelante se usa un dominio propio, basta con configurarlo en
+GitHub (Settings → Pages → Custom domain) y hacer un buscar-y-reemplazar
+de `https://patrigpor-coder.github.io/webtomate` por el dominio nuevo
+(sin barra final) en todo el proyecto.
+
+Nota: los buscadores solo leen `robots.txt` en la raíz del dominio
+(`patrigpor-coder.github.io/robots.txt`), no dentro de `/webtomate/`.
+Mientras el sitio viva en esa subcarpeta, envía el sitemap a Google
+directamente desde Google Search Console.
 
 ## Formularios
 
@@ -159,8 +167,8 @@ funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
    y `es/recetas/index.html`) tienen una tarjeta "Demnächst" / "Próximamente"
    lista para sustituir por recetas reales (instrucciones en comentarios
    `<!-- SUSTITUIR -->` dentro de esos archivos).
-3. **Dominio real** en canonical, hreflang, Open Graph, JSON-LD, sitemap.xml
-   y robots.txt (ver sección "Dominio" arriba).
+3. **Dominio propio** (opcional): hoy el sitio usa el dominio de GitHub
+   Pages (ver sección "Dominio" arriba).
 4. **Impresum / Datenschutz** (aviso legal / privacidad): los enlaces del
    pie de página apuntan a `#` como marcador de posición; falta redactar
    y enlazar estas páginas legales, obligatorias en Alemania.
