@@ -117,10 +117,9 @@ instrucciones. Por eso:
   una nota (`.nota-cadenas`) aclara que los nombres se citan solo como
   referencia comercial y que la distribución es una propuesta del proyecto.
 - Fotos del paso a paso (`<img class="paso-foto paso-foto--imagen">`,
-  1200×670-675 px): la sopa de tomate tiene las seis (`sopa-paso-1.jpg` …
-  `sopa-paso-6.jpg`) y el gazpacho los pasos 1 a 5 (`gazpacho-paso-1.jpg`
-  … `gazpacho-paso-5.jpg`). El paso 6 del gazpacho sigue con una caja
-  placeholder (`<div class="paso-foto">` con comentario `SUSTITUIR`).
+  1200×670-675 px): las dos recetas tienen sus seis fotos
+  (`sopa-paso-1.jpg` … `sopa-paso-6.jpg` y `gazpacho-paso-1.jpg` …
+  `gazpacho-paso-6.jpg`). Para una receta nueva, usa la misma clase.
   Las fotos no deben llevar texto incrustado, porque se usan también en
   la versión alemana.
 
@@ -181,8 +180,7 @@ funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
 
 ## Pendiente para publicar
 
-1. **Fotografías pendientes**: logo en PNG con fondo transparente y fotos
-   del paso 6 del gazpacho ("Enfriar y servir").
+1. **Fotografía pendiente**: logo en PNG con fondo transparente.
 2. **Recetas 3 y siguientes**: los índices de recetas (`rezepte/index.html`
    y `es/recetas/index.html`) tienen una tarjeta "Demnächst" / "Próximamente"
    lista para sustituir por recetas reales (instrucciones en comentarios
