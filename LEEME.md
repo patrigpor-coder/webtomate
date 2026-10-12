@@ -101,17 +101,15 @@ instrucciones. Por eso:
   sustituyes por un `.png`, actualiza la extensión en los HTML (búsqueda
   y reemplazo de `logo-tomate-la-canada.svg` por `logo-tomate-la-canada.png`
   en todos los archivos).
-- `/assets/img/hero-corazon-tomates.svg` es un **placeholder ilustrado**
-  del corazón de tomates sobre fondo negro (proporción vertical
-  correcta). Sustitúyelo por la fotografía real con el mismo nombre de
-  archivo (cambiando la extensión si hace falta) para no tener que tocar
-  el HTML.
-- `/assets/img/variedad-*.svg` (4 archivos) son placeholders de las
-  fotos de cada variedad en la página de Variedades/Sorten.
-- `/assets/img/receta-sopa-tomate.svg` y `/assets/img/receta-gazpacho.svg`
-  son los placeholders de la foto del plato terminado en cada receta.
-- Todos estos archivos incluyen un comentario `<!-- SUSTITUIR -->` al
-  principio explicando qué sustituir.
+- Fotografías reales (optimizadas a JPEG, máx. 1600 px de ancho):
+  `hero-corazon-tomates.jpg` (portada y landing QR), `receta-sopa-tomate.jpg`,
+  `receta-gazpacho.jpg`, `variedad-redondo-liso.jpg`, `variedad-asurcado.jpg`,
+  `variedad-oblongo.jpg`, `variedad-cereza.jpg` y `cultivo-parral.jpg`
+  (página Cultivo/Anbau). Para cambiar una foto, sustituye el archivo
+  manteniendo el nombre; si cambian sus proporciones, actualiza también
+  los atributos `width`/`height` de la etiqueta `<img>`.
+- El logo SVG incluye un comentario `<!-- SUSTITUIR -->` al principio
+  explicando qué sustituir.
 - En la página "Kaufen"/"Dónde comprar" **no se usan los logotipos de
   REWE ni EDEKA**: cada tarjeta muestra el nombre de la cadena como una
   placa tipográfica propia (clase `.tarjeta-cadena__logo`, fuente de
@@ -160,9 +158,8 @@ funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
 
 ## Pendiente para publicar
 
-1. **Fotografías reales de producto**: logo en PNG con fondo transparente,
-   fotografía del corazón de tomates, fotos de cada variedad, fotos de los
-   platos de sopa de tomate y gazpacho y fotos de cada paso de las recetas.
+1. **Fotografías pendientes**: logo en PNG con fondo transparente y fotos
+   de cada paso de las recetas.
 2. **Recetas 3 y siguientes**: los índices de recetas (`rezepte/index.html`
    y `es/recetas/index.html`) tienen una tarjeta "Demnächst" / "Próximamente"
    lista para sustituir por recetas reales (instrucciones en comentarios
