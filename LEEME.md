@@ -156,6 +156,25 @@ ningún correo real ni se guarda ningún dato**. Para que la suscripción
 funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
 (Mailchimp, Brevo, etc.) o a tu propio backend.
 
+## Cookies y Google Maps
+
+- **Aviso de cookies** (`assets/js/main.js`, sección "Consentimiento"):
+  aparece en la primera visita con dos botones del mismo peso, "Aceptar
+  todo" y "Solo necesarias". La elección se guarda en `localStorage`
+  (clave `tomate_consentimiento`) y se puede cambiar desde el enlace
+  "Cookies" / "Cookie-Einstellungen" del pie de página. Los textos están
+  en `main.js` y en la sección `cookies` de los JSON de textos.
+- **Mapa de Google** (Quiénes somos / Über uns): el `<iframe>` no está en
+  el HTML. Se inserta solo cuando el visitante da su consentimiento, desde
+  el aviso o con el botón "Aceptar y cargar el mapa". La URL del mapa está
+  en el atributo `data-src` de `[data-mapa-google]` (versión alemana con
+  los parámetros de idioma `!1sde!2sde`). Para cambiar la ubicación, pega
+  en `data-src` la URL `src` del código de inserción de Google Maps
+  (sustituyendo `&` por `&amp;`) y actualiza la dirección del pie del mapa.
+- **Pendiente:** las tipografías se cargan desde Google Fonts, que también
+  conecta con Google sin consentimiento. Para cumplir del todo el RGPD en
+  Alemania conviene alojarlas en el propio sitio.
+
 ## Pendiente para publicar
 
 1. **Fotografías pendientes**: logo en PNG con fondo transparente y fotos
@@ -168,6 +187,7 @@ funcione de verdad, conecta el `<form>` a tu proveedor de email marketing
    Pages (ver sección "Dominio" arriba).
 4. **Impresum / Datenschutz** (aviso legal / privacidad): los enlaces del
    pie de página apuntan a `#` como marcador de posición; falta redactar
-   y enlazar estas páginas legales, obligatorias en Alemania.
+   y enlazar estas páginas legales, obligatorias en Alemania. La política
+   de privacidad debe mencionar Google Maps y el aviso de cookies.
 5. **Formulario de suscripción real**: conectar a un proveedor de email
    marketing o backend propio (ver sección "Formularios" arriba).

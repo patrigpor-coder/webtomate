@@ -21,7 +21,8 @@
     "imprint": "Aviso legal",
     "privacy": "Privacidad",
     "rights": "Todos los derechos reservados.",
-    "logoAlt": "Sello de la Indicación Geográfica Protegida Tomate de La Cañada-Níjar"
+    "logoAlt": "Sello de la Indicación Geográfica Protegida Tomate de La Cañada-Níjar",
+    "cookies": "Cookies"
   },
   "common": {
     "ctaBuy": "¿Dónde comprar?",
@@ -72,7 +73,12 @@
     "timelineTodayText": "Tomate de La Cañada-Níjar se cultiva bajo estrictos criterios de calidad y se exporta, también a Alemania.",
     "mapTitle": "La zona de producción",
     "mapText": "La zona de producción está constituida por los terrenos ubicados en la comarca natural de Campo de Níjar y Bajo Andarax y por parte de Almería capital (La Cañada). Comprende los términos municipales de Almería, Huércal de Almería, Pechina, Viator y Níjar, todos de la provincia de Almería.",
-    "mapSvgTitle": "Mapa de la provincia de Almería con la zona de producción",
+    "mapIframeTitle": "Ubicación en Google Maps",
+    "mapConsentTitle": "Mapa de Google Maps",
+    "mapConsentText": "Para mostrar el mapa necesitamos tu consentimiento: al cargarlo, tu navegador se conecta con los servidores de Google (Google Ireland Ltd.), que recibe tu dirección IP y puede usar cookies.",
+    "mapConsentButton": "Aceptar y cargar el mapa",
+    "mapAddress": "Ctra. de Ronda, 11, 04004 Almería",
+    "mapOpenLink": "Abrir en Google Maps",
     "municipality1": "Almería",
     "municipality2": "Huércal de Almería",
     "municipality3": "Pechina",
@@ -416,5 +422,11 @@
     "claim": "Tomates que saben a sol.",
     "text": "Qué bien que hayas descubierto nuestros tomates. Suscríbete a nuestra receta semanal y descubre más sobre el sabor de Almería.",
     "cta": "Suscribirme ahora"
+  },
+  "cookies": {
+    "title": "Privacidad y cookies",
+    "text": "Usamos solo el almacenamiento necesario para que la web funcione (tu idioma y esta elección). Con tu permiso cargamos además contenido externo de Google Maps, que recibe tu dirección IP y puede usar cookies. Puedes cambiar tu elección cuando quieras desde el enlace «Cookies» del pie de página.",
+    "accept": "Aceptar todo",
+    "reject": "Solo necesarias"
   }
 }
